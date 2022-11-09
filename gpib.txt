@@ -1,0 +1,44 @@
+*RST Reset command. Abort all activities and initialize the device. See page 17,Reset and
+clear.
+*IDN? Identification query. Returns an identification string in the following format:
+'Manufacturer, Model, Serial number, Firmware level'
+*TST? Self test query. Perform a self-test. Returns ‘0' if self test completed without errors,
+all other values determine an error cause.
+*TRG Trigger command. Execute trigger function(s). This command has the same effect as
+the IEEE488.1 Group Execute Trigger (GET) interface-message. See page 18
+Trigger Mechanism.
+Synchronisation (See page 19, Overlapped commands and synchronisation)
+*OPC Operation Complete command. Set the Operation Complete bit in the Standard
+Event Status Register if all commands and queries are finished.
+*OPC? Operation Complete query. Return ASCII '1' as soon as all commands and queries
+are finished.
+*WAI Wait To Continue command. Wait until all commands and queries are finished.
+Instrument Status (See page 13,Instrument status)
+*CLS Clear Status command. Clears the whole status structure.
+*ESE Standard Event Status Enable command. Modify the contents of the Event Status
+Enable Register.
+*ESE? Standard Event Status Enable query. Return the contents of the Event Status Enable
+Register.
+*ESR? Standard Event Status Register query. Return the contents of the Event Status
+Register.
+*SRE Service Request Enable command. Modify the contents of the Service Request
+Enable Register.
+*SRE? Service Request Enable query. Return the contents of the Service Request Enable
+Register.
+*STB? Status Byte query. Return the contents of the Status Byte Register.
+
+
+
+1024
+99
+
+
+KRDG?A
+
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+VIRTUAL KEYBOARD
+abcdefghijklmnopqrstuvwxyz
+0123456789
+!@#$%^&*()~`=+{}:"<>?[];',./
+Virtual Keyboard
