@@ -1,0 +1,2 @@
+1. get non linear diode charecteristics
+2. save data in excel
